@@ -1,6 +1,7 @@
 #include<iostream>
 #include <string>
 #include "other.h"
+#include "other2.h"
 using namespace std;
 int main() {
 
@@ -11,4 +12,8 @@ int main() {
 	cout << s << endl;
 	o->printX();
 
+	Other2* o2 = new Other2();
+	string s2 = o2->getX();
+	cout << s2 << endl;
+	o2->printX();
 }
